@@ -2,7 +2,7 @@
 import { ExpandArrowLink, GlowCard } from '@/components';
 import clsx from 'clsx';
 import Image, { StaticImageData } from 'next/image';
-import { impulseux, leenithBorges, leenithIos, loteriaMonarca, realtorSimplified, sierraEcomaderas, template1 } from '../../public/projects/';
+import { impulseux, leenithBorges, leenithIos, wildrabbitinteriors, sailingmode , sierraEcomaderas, safebettingsite } from '../../public/projects/';
 
 interface Project {
   href: string;
@@ -16,18 +16,18 @@ interface Project {
 
 const projects: Project[] = [
   {
-    href: '/apps/realtor-simplified',
-    name: 'Realtor Simplified',
+    href: '/apps/sailingmode',
+    name: 'Sailing Mode',
     full: true,
     description: ' saas platform that enables realtors to deploy a professional website in minutes.',
-    image: { src: realtorSimplified },
+    image: { src: sailingmode },
   },
   {
-    href: '/apps/loteria-monarca',
-    name: 'Loteria Monarca',
+    href: '/apps/wildrabbitinteriors',
+    name: 'Wild Rabbit Interiors',
     full: true,
     description: ' online platform to register and play Loteria Mexicana.',
-    image: { src: loteriaMonarca },
+    image: { src: wildrabbitinteriors },
   },
   // {
   //   href: '/apps/realtor-template-1',

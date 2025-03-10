@@ -1,17 +1,17 @@
 import { AppSolution, Border, Button, Container, FadeIn, FadeInStagger, Section } from '@/components';
-import { loteriaMonarca } from '../../../../public/projects'
+import { wildrabbitinteriors } from '../../../../public/projects'
 import Image from 'next/image';
 
 export const appData = {
-  industry: 'Entertainment',
-  title: 'Loteria Monarca',
-  description: 'Online platform to play the traditional Mexican game "Loteria Tradicional" & "Loteria de Pocitos" with friends and family.',
-  image: loteriaMonarca,
-  date: '2020-02',
+  industry: 'E-commerce',
+  title: 'Wild Rabbit Interiors',
+  description: 'is built on the Shopify platform, a popular e-commerce solution that allows businesses to create and manage online stores efficiently.',
+  image: wildrabbitinteriors,
+  date: '2019',
   service: 'Web Application',
-  url: 'https://loteria-online.onrender.com/',
-  pathname: '/apps/loteria-monarca',
-  framework: 'svelte',
+  url: 'https://wildrabbitinteriors.com.au/',
+  pathname: '/apps/wildrabbitinteriors',
+  framework: 'shopify',
 };
 
 export const sections = [
@@ -40,24 +40,16 @@ export const technologies = [
     image: '/logos/css-logo.png',
   },
   {
-    name: 'TailwindCSS',
-    image: '/logos/tailwindcss-logo.jpg',
+    name: 'Shopify',
+    image: '/logos/shopify.png'
   },
   {
     name: 'JQuery',
     image: '/logos/jquery-logo.webp',
   },
   {
-    name: 'Svelte',
-    image: '/logos/svelte-logo.png',
-  },
-  {
-    name: 'NodeJS',
-    image: '/logos/nodejs-logo.png',
-  },
-  {
-    name: 'ExpressJS',
-    image: '/logos/express-logo.png',
+    name: 'GSAP',
+    image: '/logos/gsap_logo.png',
   },
   {
     name: 'MongoDB',
@@ -93,8 +85,7 @@ export const technologies = [
   <Section id="challenge">
     ## Challenge
 
-    Design and develop an online platform that enables users to play "Loteria Tradicional" & "Loteria de Pocitos". Allow players to create their Loteria 'Tables' and 
-    use them on their games.
+    Design and develop an online platform that enables users to visit Shopify. Design a mood board for a stylish and inviting Airbnb space inspired by Wild Rabbit Interiors aesthetic.
 
     - Master Admin should be able to create and modify 'Events'.
 
@@ -116,19 +107,15 @@ export const technologies = [
 
 ## Solution
 
-<AppSolution image='loteria-monarca.png' href={appData.url}>
+Application is made up of 2 different express servers. Each of this servers is hosted on their own Heroku dyno.
 
-Loteria Monarca's application is made up of 2 different express servers. Each of this servers is hosted on their own Heroku dyno.
+This is the user facing interface. This is where users are able to do all of the actions that are available to them.
 
-Loteria Monarca's 'App' is the user facing interface. This is where users are able to do all of the actions that are available to them.
-
-Loteria Monarca's 'Dashboard' is the admin's interface. Here the admin is able to create and modify 'Events', start and end 'Events', and view the 'Events' results.
+This's 'Dashboard' is the admin's interface. Here the admin is able to create and modify 'Events', start and end 'Events', and view the 'Events' results.
 
 After 2/3 months of success and after reaching 15k unique users, 100s of concurrent users on game night, and 12k USD NRR, I made the decision to transition 
-the front end app over to SvelteJs and TailwindCSS for a better user experience and speed, and implemented Stripe and Paypal payment processing.
+the front end app over to Shopify and GSAP for a better user experience and speed, and implemented Stripe and Paypal payment processing.
 
-
-</AppSolution>
 
 **Initial load is around ~2 minutes due to free hosting.*
 

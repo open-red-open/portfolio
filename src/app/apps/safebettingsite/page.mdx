@@ -1,16 +1,16 @@
 import { AppSolution, Border, Container, FadeIn, FadeInStagger, Section } from '@/components';
 import Image from 'next/image';
-import { template1 } from '../../../../public/projects';
+import { safebettingsite } from '../../../../public/projects';
 export const appData = {
-  industry: 'Real Estate',
-  title: 'Template 1',
-  description: 'Template available for deployment at the realtor simplified platform.',
-  image: template1,
-  date: '2022-10',
+  industry: 'Online Gambling',
+  title: 'SafeBettingSite',
+  description: '​SafeBettingSite is an online platform dedicated to providing educational content about the gambling industry',
+  image: safebettingsite,
+  date: '2023',
   service: 'Web application',
-  url: 'https://template-1.realtorsimplified.com/',
-  pathname: '/apps/realtor-template-1',
-  framework: 'next',
+  url: 'https://www.safebettingsites.com/',
+  pathname: '/apps/safebettingsite',
+  framework: 'wordpress',
 };
 
 export const sections = [
@@ -39,28 +39,20 @@ export const technologies = [
     image: '/logos/js-logo.png',
   },
   {
-    name: 'ReactJS',
-    image: '/logos/react-logo.png',
+    name: 'PHP',
+    image: '/logos/php_logo.png',
   },
   {
-    name: 'NextJS',
-    image: '/logos/nextjs-logo.png',
+    name: 'WordPress',
+    image: '/logos/wordpress_logo.png',
   },
   {
-    name: 'TailwindCSS',
-    image: '/logos/tailwindcss-logo.jpg',
+    name: 'jQuery',
+    image: '/logos/jquery_logo.png',
   },
   {
-    name: 'NodeJS',
-    image: '/logos/nodejs-logo.png',
-  },
-  {
-    name: 'ExpressJS',
-    image: '/logos/express-logo.png',
-  },
-  {
-    name: 'MongoDB',
-    image: '/logos/mongodb-logo.webp',
+    name: 'MySQL',
+    image: '/logos/mysql_logo.png',
   },
   {
     name: 'DigitalOcean',
@@ -80,9 +72,9 @@ export const technologies = [
     image: '/logos/postmark-logo.png',
   },
   {
-    name: 'LeafletJS',
-    image: '/logos/leaflet-logo.jpg',
-  },
+    name: 'PayPal',
+    image:'/logos/paypal-logo.png'
+  }
 ];
 
 <Container>
@@ -91,11 +83,11 @@ export const technologies = [
 
   <Section id="challenge">
     ## Challenge
-
-    Design & Develop a template that can be deployed by a user in the realtor simplified platform. This template should be a reusable skeleton that can be
+ 
+    Design & Develop a site that can be deployed by a user in the wordpress platform. This should be a reusable skeleton that can be
     re-skinned with different colors and images. 
     
-    The template should display a list of properties, a list of realtors, and a contact form. It also needs to display a map with the location of the properties, 
+    The site should display a list of properties, a list of realtors, and a contact form. It also needs to display a map with the location of the properties, 
     and have a dashboard where admin users can manage the content of the website.
 
     - Dashboard should only be accessible to admin users.
@@ -114,13 +106,13 @@ export const technologies = [
 
 ## Solution
 
-<AppSolution image='realtor-template-1.png' href={appData.url}>
+<AppSolution image='safebettingsite.png' href={appData.url}>
   
-Template built to be deployed in the realtor simplified platform. Something that was taken into considaration was that the site had to be easy to use and maintain.
+Site built to be deployed in the wordpress platform. Something that was taken into considaration was that the site had to be easy to use and maintain.
 
-This initial template is geared towards small real estate companies or agents that want to have a web presence.
+This initial site is geared towards small betting companies or agents that want to have a web presence.
 
-The Front-End is built with ReactJS and NextJS, the database used is MongoDB, for the static images a Digital OCean Spaces is used, and for the map a Mapbox API and Leaflet is used.
+The Front-End is built with WordPress, the database used is MySQL, for the static images a Digital OCean Spaces is used, and for the map a Mapbox API and Leaflet is used.
 
 
 The most importat components in this template are the Map, since it can be used in pretty much any other template, and the Dashboard, since it allows the user to manage the content of the website.

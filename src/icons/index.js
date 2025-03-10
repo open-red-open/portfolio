@@ -45,6 +45,7 @@ import Public from './public';
 import PublicOpen from './public-open';
 import RadioTower from './radio-tower';
 import ReactIcon from './react-icon';
+import ShopifyIcon from './shopify-icon';
 import Refresh from './refresh';
 import Remote from './remote';
 import SaveAll from './save-all';
@@ -70,6 +71,7 @@ import UntoggledSidebar from './untoggled-sidebar';
 import VSCode from './vscode';
 import Warning from './warning';
 import WorkExperience from './work-experience';
+import WordPress from './wordpress-icon';
 
 export {
   AboutMe,
@@ -129,6 +131,7 @@ export {
   SplitVerticalToggled,
   SplitVerticalUntoggled,
   Src,
+  ShopifyIcon,
   SrcOpen,
   SubSection,
   Svelte,
@@ -144,4 +147,5 @@ export {
   VSCode,
   Warning,
   WorkExperience,
+  WordPress
 };

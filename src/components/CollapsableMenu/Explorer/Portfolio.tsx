@@ -40,6 +40,8 @@ import {
   TsConfig,
   Tsx,
   WorkExperience,
+  WordPress,
+  ShopifyIcon
 } from '@/icons';
 import { App as AppType, MDXEntry } from '@/lib/mdx';
 import { Section, SubMenu, selectExpanded, selectPortfolio, selectSectionIsVisible, selectSectionOrder, selectSections, useSelector } from '@/lib/redux';
@@ -66,6 +68,8 @@ const fileType = {
   ['next' as string]: <NextConfig />,
   ['svelte' as string]: <Svelte />,
   ['leetcode' as string]: <Leetcode />,
+  ['wordpress' as string]: <WordPress />,
+  ['shopify' as string]: <ShopifyIcon />
 };
 
 const subSectionsIcons: { [key: string]: JSX.Element } = {

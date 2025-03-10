@@ -1,17 +1,17 @@
 import { AppSolution, Border, Button, Container, FadeIn, FadeInStagger, Section } from '@/components';
 import Image from 'next/image';
-import { realtorSimplified } from '../../../../public/projects';
+import { sailingmode } from '../../../../public/projects';
 
 export const appData = {
-  industry: 'Real Estate',
-  title: 'Realtor Simplified',
-  description: 'Realtor Simplified is a saas platform that allows you to deploy a real estate website from a selection of templates within minutes.',
-  image: realtorSimplified,
-  date: '2023-01',
+  industry: 'Booking',
+  title: 'Sailing Mode',
+  description: ' is a saas platform that allows you to deploy a real booking from a selection of templates within minutes.',
+  image: sailingmode,
+  date: '2018',
   service: 'Saas application',
-  url: 'https://www.realtorsimplified.com/',
-  pathname: '/apps/realtor-simplified',
-  framework: 'next',
+  url: 'https://sailingmode.com/',
+  pathname: '/apps/sailingmode',
+  framework: 'angular',
 };
 
 export const sections = [
@@ -40,32 +40,24 @@ export const technologies = [
     image: '/logos/js-logo.png',
   },
   {
-    name: 'ReactJS',
-    image: '/logos/react-logo.png',
-  },
-  {
-    name: 'NextJS',
-    image: '/logos/nextjs-logo.png',
+    name: 'Angular',
+    image: '/logos/angular.png',
   },
   {
     name: 'TailwindCSS',
     image: '/logos/tailwindcss-logo.jpg',
   },
   {
-    name: 'NodeJS',
-    image: '/logos/nodejs-logo.png',
-  },
-  {
-    name: 'ExpressJS',
-    image: '/logos/express-logo.png',
+    name: 'SprginBoot',
+    image: '/logos/springboot_logo.png',
   },
   {
     name: 'MongoDB',
     image: '/logos/mongodb-logo.webp',
   },
   {
-    name: 'Stripe',
-    image: '/logos/stripe-logo.png',
+    name: 'Amazon S3',
+    image: '/logos/s3-logo.png',
   },
   {
     name: 'DigitalOcean',
@@ -116,15 +108,15 @@ export const technologies = [
 
 ## Solution
 
-<AppSolution image='realtor-simplified.png' href={appData.url}>
+<AppSolution image='sailingmode.png' href={appData.url}>
   
-Realtor Simplified Saas is split in 3 different systems. Each of this systems is hosted in their own server and they communicate through apis.
+F is split in 3 different systems. Each of this systems is hosted in their own server and they communicate through apis.
 
-The first system 'Shop' is a NextJs application that faces the user. It is where a user can register, manage their subscription, and choose which template to deploy.
+The first system 'Booking' is a Angular application that faces the user. It is where a user can register, manage their subscription, and choose which template to deploy.
 Once a template is deployed this is also where that user is able to change the template, add admin users that can access the application dasboard's and where they can add
 a custom domain for the application.
 
-The second system 'Server' is a small express server that serves as a connection between the 'Shop' and the 'Worker' system. It's job is to recieve orders from the 'Shop'
+The second system 'Server' is a small express server that serves as a connection between the 'Booking' and the 'Worker' system. It's job is to recieve orders from the 'Shop'
 and initialize any of the 3 job sequences available:
 
 <ul role="list" className="mt-6 space-y-8">
