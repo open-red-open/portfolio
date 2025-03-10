@@ -27,6 +27,7 @@ import {
   Public,
   PublicOpen,
   ReactIcon,
+  AngularIcon,
   Refresh,
   SolutionIcon,
   Src,
@@ -41,7 +42,7 @@ import {
   Tsx,
   WorkExperience,
   WordPress,
-  ShopifyIcon
+  ShopifyIcon,
 } from '@/icons';
 import { App as AppType, MDXEntry } from '@/lib/mdx';
 import { Section, SubMenu, selectExpanded, selectPortfolio, selectSectionIsVisible, selectSectionOrder, selectSections, useSelector } from '@/lib/redux';
@@ -69,7 +70,8 @@ const fileType = {
   ['svelte' as string]: <Svelte />,
   ['leetcode' as string]: <Leetcode />,
   ['wordpress' as string]: <WordPress />,
-  ['shopify' as string]: <ShopifyIcon />
+  ['shopify' as string]: <ShopifyIcon />,
+  ['angular' as string]: <AngularIcon />
 };
 
 const subSectionsIcons: { [key: string]: JSX.Element } = {

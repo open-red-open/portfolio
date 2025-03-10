@@ -45,6 +45,7 @@ import Public from './public';
 import PublicOpen from './public-open';
 import RadioTower from './radio-tower';
 import ReactIcon from './react-icon';
+import AngularIcon from './angular-icon';
 import ShopifyIcon from './shopify-icon';
 import Refresh from './refresh';
 import Remote from './remote';
@@ -79,6 +80,7 @@ export {
   App,
   AppOpen,
   Archive,
+  AngularIcon,
   Bell,
   BookOpen,
   BottomLeftArrow,
