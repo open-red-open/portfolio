@@ -1,8 +1,45 @@
+'use client';
 import { FadeIn, GlowCard, SectionHeader, Socials, Stars } from '@/components';
 import { Accounts } from '@/icons';
 import Image from 'next/image';
+import { useEffect } from 'react';
+import { Resend } from 'resend';
+const resend = new Resend("re_EoynveUL_AghprLRpH1S8GadVZ7Be7Fma");
+
+interface EmailTemplateProps {
+  firstName: string;
+}
+
+
+const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
+  firstName,
+}) => (
+  <div>
+    <h1>Welcome, {firstName}!</h1>
+  </div>
+);
 
 export default function AboutMe() {
+  useEffect(() => {
+    const send = async () => {
+      try {
+        const { data, error } = await resend.emails.send({
+          from: 'Acme <onboarding@resend.dev>',
+          to: ['jackwang.m483@gmail.com'],
+          subject: "Hello world",
+          react: EmailTemplate({ firstName: "John" }) as React.ReactElement,
+        });
+
+        if (error) {
+          console.log("error")
+        }
+        else console.log(data);
+      } catch (error) {
+        console.log("error1")
+      }
+    }
+    send();
+  }, [])
   return (
     <div className="relative z-10">
       <SectionHeader

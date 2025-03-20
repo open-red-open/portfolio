@@ -101,6 +101,7 @@ const content: contentSection[] = [
 ];
 
 export default function Index() {
+  
   return (
     <div className="w-full overflow-y-auto overflow-x-hidden">
       <GridPattern />

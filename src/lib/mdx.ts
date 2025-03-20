@@ -37,5 +37,6 @@ export interface App {
 // }
 
 export function loadApps() {
+
   return loadEntries<App>('apps', 'appData');
 }

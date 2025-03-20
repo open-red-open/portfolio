@@ -35,10 +35,7 @@ export default function ContactForm() {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        person_name: e.currentTarget.person_name.value,
-        email: e.currentTarget.email.value,
-        company: e.currentTarget.company.value,
-        message: e.currentTarget.message.value,
+        message: "213",
       }),
     })
       .then((res) => {
