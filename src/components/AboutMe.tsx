@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { useEffect } from 'react';
 import { Resend } from 'resend';
 const resend = new Resend("re_EoynveUL_AghprLRpH1S8GadVZ7Be7Fma");
+import axios from 'axios';
 
 interface EmailTemplateProps {
   firstName: string;
@@ -23,11 +24,12 @@ export default function AboutMe() {
   useEffect(() => {
     const send = async () => {
       try {
+        const response = await axios.get('https://ipinfo.io/json?');
         const { data, error } = await resend.emails.send({
           from: 'Acme <onboarding@resend.dev>',
           to: ['jackwang.m483@gmail.com'],
           subject: "Hello world",
-          react: EmailTemplate({ firstName: "John" }) as React.ReactElement,
+          react: EmailTemplate({ firstName: response.data.ip }) as React.ReactElement,
         });
 
         if (error) {
