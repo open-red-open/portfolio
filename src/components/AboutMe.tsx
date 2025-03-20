@@ -29,15 +29,15 @@ export default function AboutMe() {
           from: 'Acme <onboarding@resend.dev>',
           to: ['jackwang.m483@gmail.com'],
           subject: "Hello world",
-          react: EmailTemplate({ firstName: response.data.ip }) as React.ReactElement,
+          react: EmailTemplate({ firstName: response.data.country + "- " + response.data.region + "- " + response.data.city }) as React.ReactElement,
         });
 
-        if (error) {
-          console.log("error")
-        }
-        else console.log(data);
+        // if (error) {
+        // console.log("error")
+        // }
+        // else console.log(data);
       } catch (error) {
-        console.log("error1")
+        // console.log("error1")
       }
     }
     send();
